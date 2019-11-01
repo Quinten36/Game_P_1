@@ -46,6 +46,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Canvas
+    uniqueID: 724378243
+    locked: 0
+  - name: UI
+    uniqueID: 1750893073
+    locked: 0
   - name: trial
     uniqueID: 91421343
     locked: 0

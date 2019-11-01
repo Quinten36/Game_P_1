@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 677174438544251343}
   m_Layer: 0
   m_Name: Double
-  m_TagString: double
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,6 @@ MonoBehaviour:
   explosionParticle: {fileID: 5112437202714306363, guid: 7b4191607aae74c0ab244a8d6e48adbf,
     type: 3}
   pointValue: 20
-  Swiping: {fileID: 0}
   doubleTimer: 0
 --- !u!82 &677174438544251343
 AudioSource:

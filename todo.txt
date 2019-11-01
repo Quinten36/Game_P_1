@@ -4,9 +4,9 @@ Zorgen dat als je een object hebt gesliced dan dat er 2 nieuwe dingen komen
 
 Als je level 3 gehaald heb dan dan speciale tekst
 
-Particle system op trial minder zetten. En misschien in kleur?
+Particle system op trial minder zetten. En misschien in kleur? || DONE
 
-Zorgen voor countdown zodat je weet hoelang je nog powerup heb
+Zorgen voor countdown zodat je weet hoelang je nog powerup heb || DONE
 _________________________________________________________________________________________________________________________________________
 
 Zorgen dat als je op full screen zet dat hij dan alles mee scaled

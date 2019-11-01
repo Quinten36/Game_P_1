@@ -11,34 +11,29 @@ public class Gamemanager : MonoBehaviour
     public List<GameObject> trials;
     public int Level = 1;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI countdownText;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
     public GameObject titleScreen;
     public Slider slider;
     public Button ActivateBTN;
     public TextMeshProUGUI spaceText;
-    //public GameObject DoubleScore;
-    //private Target target;
     public bool isGameActive;
     private int score;
     private float spawnRate = 1.0f;
     public int level;
     public float levelUpScore = 150;
-
     public int multiplier = 1;
     public bool doubleScore;
-
     public TimeManager timeManager;
-    
     private int SettrialNumber;
     private int playerLevel;
+    private int countdown;
 
     // Start is called before the first frame update
     void Start()
     {
-      
       doubleScore = false;
-      
       // PlayerPrefs.SetInt("trial", 0);
       // PlayerPrefs.SetInt("trialSet", 0);
 
@@ -65,6 +60,14 @@ public class Gamemanager : MonoBehaviour
             ActivateBTN.onClick.Invoke();
           //}
         //}
+      }
+      // Debug.Log(countdown);
+      if (countdown != 0)
+      {
+        countdownText.gameObject.SetActive(true);
+        countdownText.text = countdown + " sec left";
+      } else {
+        countdownText.gameObject.SetActive(false);
       }
     }
 
@@ -158,10 +161,19 @@ public class Gamemanager : MonoBehaviour
      multiplier = 2;
      //Debug.Log("Activate");
      slider.gameObject.SetActive(false);
-     yield return new WaitForSeconds(5);
+     countdown = 5;
+     yield return new WaitForSeconds(1);
+     countdown = 4;
+     yield return new WaitForSeconds(1);
+     countdown = 3;
+     yield return new WaitForSeconds(1);
+     countdown = 2;
+     yield return new WaitForSeconds(1);
+     countdown = 1;
+     yield return new WaitForSeconds(1);
+     countdown = 0;
      multiplier = 1;
      slider.value = 0;
-     //Debug.Log("Deactived");
      yield return new WaitForSeconds(5);
      slider.value = 0;
      yield return new WaitForSeconds(5);
