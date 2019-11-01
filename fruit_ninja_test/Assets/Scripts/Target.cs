@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -78,7 +78,7 @@ public class Target : MonoBehaviour
                 Destroy(gameObject);
         if (!gameObject.CompareTag("Bad")) {
           if (!gameObject.CompareTag("double")) {
-            //gameManager.GameOver();
+            gameManager.GameOver();
           }
         }
       //}
@@ -117,7 +117,7 @@ public class Target : MonoBehaviour
 
     Vector3 RandomSpawnPos()
     {
-        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, 0);
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, Random.Range(-1, 1));
     }
 }
 
