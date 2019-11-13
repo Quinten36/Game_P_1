@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{8A1AFD76-5CE2-DA31-BD09-4C361CFCC383}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gamemanager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/trialNumber.cs">
     <Files>
       <File FileName="Assets/Scripts/Target.cs" Line="81" Column="15" />
       <File FileName="Assets/Scripts/DifficultyButton.cs" Line="22" Column="27" />
       <File FileName="Assets/Scripts/mouse_follow.cs" Line="35" Column="49" />
-      <File FileName="Assets/Scripts/mouse_follow2.cs" Line="32" Column="24" />
-      <File FileName="Assets/Scripts/Gamemanager.cs" Line="67" Column="11" />
-      <File FileName="Assets/Scripts/trialNumber.cs" Line="57" Column="43" />
-      <File FileName="Assets/Scripts/PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/mouse_follow2.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/Gamemanager.cs" Line="100" Column="6" />
+      <File FileName="Assets/Scripts/trialNumber.cs" Line="64" Column="52" />
+      <File FileName="Assets/Scripts/PauseMenu.cs" Line="13" Column="32" />
+      <File FileName="Assets/Scripts/Shopmanager.cs" Line="44" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +16,7 @@
           <Node name="fruit_ninja_test" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Gamemanager.cs" selected="True" />
+                <Node name="trialNumber.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1378a1d9-e6bb-43f5-b09c-b18b356c42d0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="994e07b0-17c0-4ea9-8d71-5f266b44abb5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

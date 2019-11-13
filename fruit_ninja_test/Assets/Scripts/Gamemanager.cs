@@ -12,6 +12,9 @@ public class Gamemanager : MonoBehaviour
     public int Level = 1;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI countdownText;
+    public TextMeshProUGUI endText;
+    public int coins;
+    public TextMeshProUGUI coinText;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
     public GameObject titleScreen;
@@ -29,11 +32,16 @@ public class Gamemanager : MonoBehaviour
     private int SettrialNumber;
     private int playerLevel;
     private int countdown;
+    private bool firstTime;
+    private bool gameEnd;
 
     // Start is called before the first frame update
     void Start()
     {
+        coins = 0;
+        firstTime = true;
       doubleScore = false;
+      gameEnd = false;
       // PlayerPrefs.SetInt("trial", 0);
       // PlayerPrefs.SetInt("trialSet", 0);
 
@@ -87,9 +95,18 @@ public class Gamemanager : MonoBehaviour
     {
        if (scoreToAdd < 0) {
          score += scoreToAdd;
-       } else {
+         coins += 1;
+        } else {
          score += scoreToAdd * multiplier;
-       }
+         coins += 15;
+        }
+        if (firstTime == true)
+        {
+            coins = 0;
+            firstTime = false;
+        }
+        coinText.text = "Coins: " + coins;
+        PlayerPrefs.SetInt("coins", coins);
       scoreText.text = "Score: " + score;
         //Debug.Log(Level);
         //Debug.Log(spawnRate);
@@ -103,9 +120,12 @@ public class Gamemanager : MonoBehaviour
           PlayerPrefs.SetInt("level", 3);
           SceneManager.LoadScene("level3");
         }
-        else if (Level == 3 && spawnRate < 0.5 && score > 250)
+        else if (Level == 3 && spawnRate < 0.5 && score > 2)
         {
           Debug.Log("gelukt");
+          PlayerPrefs.SetInt("coin", 999999999);
+          gameEnd = true;
+          endText.gameObject.SetActive(true);
           //een tekst in beeld laten komen dat hij op max level is
         }      
 
@@ -120,13 +140,19 @@ public class Gamemanager : MonoBehaviour
           spaceText.gameObject.SetActive(false);
           //slider.value = 100;
         }
+
     }
 
     public void GameOver()
     {
-      gameOverText.gameObject.SetActive(true);
-      restartButton.gameObject.SetActive(true);
-      isGameActive = false;
+      if (gameEnd) {
+
+      } else {
+        PlayerPrefs.SetInt("coins", coins);
+        gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        isGameActive = false;
+      }
     }
 
     public void RestartGame()
@@ -139,6 +165,7 @@ public class Gamemanager : MonoBehaviour
     {
       //check in maken zodat je alleen met level 1 east. level 2 medium ect
         isGameActive = true;
+        endText.gameObject.SetActive(false);
         score = 0;
         spawnRate /= difficulty;
         level = difficulty;
@@ -146,6 +173,7 @@ public class Gamemanager : MonoBehaviour
         UpdateScore(0);
 
         titleScreen.gameObject.SetActive(false);
+        coins = PlayerPrefs.GetInt("coins");
 
         //Debug.Log(difficulty);
     }
@@ -191,10 +219,14 @@ public class Gamemanager : MonoBehaviour
 
     public void toOptions() 
     {
-        // playerLevel = PlayerPrefs.GetInt("level", 0);
-        // Debug.Log(playerLevel);
         SceneManager.LoadScene("options");
         //dit moet de variabele van player frebs zijn
+    }
+
+    public void resetCoins() 
+    {
+        coins = 0;
+        PlayerPrefs.SetInt("coins", coins);
     }
 }
 

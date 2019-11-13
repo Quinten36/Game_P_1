@@ -28,9 +28,17 @@ public class mouse_follow2 : MonoBehaviour
         //refScript = GetComponent<PauseMenu>();
         if (!refScript.isPaused) {
             Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
             // Vector3 pos2 = pos, 1;
             pos.z += 11;
             transform.position = pos;
+
+            //Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //Vector3 pos = r.GetPoint(1);
+
+            //// Vector3 pos2 = pos, 1;
+            //pos.z += 11;
+            //transform.position = pos;
         }
     }
 }
