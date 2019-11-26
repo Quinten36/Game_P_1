@@ -1,7 +1,14 @@
 ﻿<Properties StartupConfiguration="{7C084781-669C-050C-B939-B9153794AA9C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasic.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/move.cs">
     <Files>
+      <File FileName="../../../../../../Volumes/83502/Leerjaar1/game/unity 3/rip off/Assets/Quinten spul/script/BeweegScript.cs" Line="1" Column="1" />
+      <File FileName="../../../../../../Volumes/83502/Leerjaar1/game/unity 3/rip off/Assets/Quinten spul/script/bewegen_cube.cs" Line="17" Column="2" />
+      <File FileName="Assets/script/move.cs" Line="46" Column="21" />
+      <File FileName="Assets/script/mouse_follow.cs" Line="52" Column="26" />
       <File FileName="Assets/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasic.shader" Line="1" Column="1" />
+      <File FileName="../../../../../../Volumes/83502/Leerjaar1/game/unity 3/rip off/Assets/Quinten spul/script/car_terug.cs" Line="16" Column="3" />
+      <File FileName="../../../../../../Volumes/83502/Leerjaar1/game/unity 2/unity 2/Assets/script/prefab/MoveScript.cs" Line="27" Column="2" />
+      <File FileName="../../../../../../Volumes/83502/Leerjaar2/game2/fruit_ninja_test/Assets/Scripts/mouse_follow2.cs" Line="18" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,22 +19,28 @@
                 <Node name="Standard Assets" expanded="True">
                   <Node name="Effects" expanded="True">
                     <Node name="ToonShading" expanded="True">
-                      <Node name="Shaders" expanded="True">
-                        <Node name="ToonBasic.shader" selected="True" />
-                      </Node>
+                      <Node name="Shaders" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
               </Node>
+              <Node name="script" expanded="True">
+                <Node name="move.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Cinematic" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="45a779d0-de65-425d-a43b-626bc0e501da" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="34797379-c390-482c-9040-75f7d31ad8ea" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
