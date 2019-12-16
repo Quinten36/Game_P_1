@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{8B5F04C5-0C33-C9C5-2463-7B5A9B86563B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/WaveSpawner.cs">
+    <Files>
+      <File FileName="Assets/script/WaveSpawner.cs" Line="27" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test_VR" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="script" expanded="True">
+                <Node name="WaveSpawner.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8d70abaf-1c7a-43a2-ad5f-3664d7b539d1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
