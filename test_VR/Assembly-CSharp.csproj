@@ -69,12 +69,16 @@
     <Compile Include="Assets\script\Enemy.cs" />
     <Compile Include="Assets\script\movement.cs" />
     <Compile Include="Assets\script\node.cs" />
+    <Compile Include="Assets\script\Shop.cs" />
     <Compile Include="Assets\script\Turret.cs" />
     <Compile Include="Assets\script\wall.cs" />
     <Compile Include="Assets\script\WaveSpawner.cs" />
     <Compile Include="Assets\script\Waypoints.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Github Documenten/Game_P_1/test_VR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Github Documenten/Game_P_1/test_VR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/Github Documenten/Game_P_1/test_VR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
