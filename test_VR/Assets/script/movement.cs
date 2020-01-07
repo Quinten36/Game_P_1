@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-
+    private bool doMovement = true;
     public float panSpeed = 10f;
     public float panBorderThickness = 15f;
     private float leftRight;
@@ -19,6 +19,10 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            doMovement = !doMovement;
+        if (!doMovement)
+            return;
         if (Input.GetKey(KeyCode.Mouse1) != true)
         {
             if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)

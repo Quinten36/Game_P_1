@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour
         movementZ = transform.position.z;
         movementX = transform.position.x;
         // Dev t6ool
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.Escape))
             doMovement = !doMovement;
         if (!doMovement)
             return;
