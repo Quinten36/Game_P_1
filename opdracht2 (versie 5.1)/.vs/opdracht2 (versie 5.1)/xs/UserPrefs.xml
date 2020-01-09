@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{02CF8D4E-595F-591D-89CE-E817E1D232BE}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/beweeg.cs">
     <Files>
-      <File FileName="Assets/scripts/cam.cs" Line="9" Column="31" />
-      <File FileName="Assets/scripts/beweeg.cs" Line="41" Column="8" />
+      <File FileName="Assets/scripts/cam.cs" Line="10" Column="1" />
+      <File FileName="Assets/scripts/beweeg.cs" Line="25" Column="49" />
+      <File FileName="Assets/scripts/score.cs" Line="52" Column="34" />
+      <File FileName="../../../../Volumes/83502/Leerjaar2/game2/fruit_ninja_test/Assets/Scripts/Gamemanager.cs" Line="120" Column="42" />
+      <File FileName="../../../../Volumes/83502/Leerjaar2/game2/fruit_ninja_test/Assets/Scripts/Target.cs" Line="10" Column="5" />
+      <File FileName="../../../../Volumes/83502/test_VR/Assets/script/BuildManager.cs" Line="23" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b2a965a7-0926-4fc4-81cc-85a3006b1877" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6c6f84a4-7a5f-4f97-81f3-ba27cc8d0eb5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

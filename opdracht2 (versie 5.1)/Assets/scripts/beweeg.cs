@@ -14,6 +14,19 @@ public class beweeg : MonoBehaviour
     public float hoek;
     private float slow;
 
+    public static int Score;
+
+    public static beweeg instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.Log("more than 1 beweeg script");
+            return;
+        }
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +36,7 @@ public class beweeg : MonoBehaviour
 
         oldPos = transform.position;
         oldQ = transform.rotation;
+        Score = 0;
     }
 
     //charge. random hoek
@@ -38,10 +52,7 @@ public class beweeg : MonoBehaviour
             rb.AddForce(-power, 0, hoek);
             rb.AddTorque(new Vector3(0, power, 0));
         }
-        //if (Input.GetKeyUp(KeyCode.Space))
-        //{
-        //    rb.AddForce(power - slow, 0, hoek);
-        //}
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //zodat de bal niet meer kan draaien en bewegen
