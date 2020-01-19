@@ -14,7 +14,7 @@ public class Autoscript : MonoBehaviour
     public float maxEnginePower = 250;
     public float maxSteeringAngle = 30;
 
-    [Header("dfg")]
+    [Header("Crash control")]
     public float resetTime = 5.0f;
     public float resetTimer = 0.0f;
 
@@ -33,7 +33,7 @@ public class Autoscript : MonoBehaviour
         float engine = maxEnginePower * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
-        Debug.Log(engine);
+       // Debug.Log(engine);
 
         leftFront.steerAngle = steering;
         rightFront.steerAngle = steering;
@@ -45,6 +45,11 @@ public class Autoscript : MonoBehaviour
         ZetWiel(rightFront);
         ZetWiel(leftRear);
         ZetWiel(rightRear);
+
+        Debug.Log(resetTimer);
+        //Debug.Log(resetTime);
+
+        crashControle();
     }
 
     void ZetWiel(WheelCollider collider)
@@ -60,9 +65,30 @@ public class Autoscript : MonoBehaviour
 
     private void crashControle()
     {
-        if (transform.localEulerAngles.z > 80 && transform.localEulerAngles.z < 200)
+        if (transform.localEulerAngles.z > -89 && transform.localEulerAngles.z < -271 || transform.localEulerAngles.z > 89 && transform.localEulerAngles.z < 271)
         {
-            resetTimer
+            resetTimer += Time.deltaTime;
+        } 
+        else
+        {
+            resetTimer = 0;
         }
+
+        if (resetTimer > resetTime)
+        {
+            FlipCar();
+        }
+    }
+
+    void FlipCar ()
+    {
+        transform.rotation = Quaternion.LookRotation(transform.forward);
+        //transform.localPosition += Vector3.down * 1.5f;
+        Vector3 oldpos = transform.position;
+        oldpos.y += 3.0f;
+        transform.position = oldpos;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        resetTimer = 0;
     }
 }
