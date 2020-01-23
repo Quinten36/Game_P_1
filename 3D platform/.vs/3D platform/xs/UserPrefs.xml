@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{F2DD7480-0471-84DA-36C5-9B81ADD20B83}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/prefab/Enemy.cs">
+    <Files>
+      <File FileName="Assets/prefab/Waypoints.cs" Line="1" Column="1" />
+      <File FileName="Assets/prefab/Enemy.cs" Line="28" Column="70" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="3D platform" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="prefab" expanded="True">
+                <Node name="Enemy.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="3D platform" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d65a7e5e-1668-495b-bcc6-e49aa2b3e406" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
