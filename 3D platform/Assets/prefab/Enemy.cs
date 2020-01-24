@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     
-    public float speed = 10f;
+    public static float speed = 2f;
 
     private Transform target;
     private int waypointIndex = 0;
@@ -40,11 +40,20 @@ public class Enemy : MonoBehaviour
             GetNextWaypoint();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (transform.position.y <= 0.8f)
         {
-            rb.AddForce(0, 200, 0);
-            Debug.Log("spring");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.AddForce(0, 200, 0);
+                Debug.Log("spring");
+            }
         }
+
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+
     }
 
     void GetNextWaypoint ()
@@ -52,18 +61,21 @@ public class Enemy : MonoBehaviour
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
             waypointIndex = 0;
+            control.score++;
+            speed += 0.75f;
         }
 
         waypointIndex++;
         target = Waypoints.points[waypointIndex];
     }
 
-    private void OnTriggerEnter(Collider Player)
+    private void OnTriggerEnter(Collider player)
     {
-        if (Player.tag == "death")
+        if (player.tag == "death")
         {
             transform.position = oldPos;
             waypointIndex = 0;
+            control.life--;
             target = Waypoints.points[waypointIndex];
             //Waypoints.points[waypointIndex] = Waypoints.points[waypointIndex] ;
             Debug.Log("death");
