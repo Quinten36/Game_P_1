@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private Transform target;
     private int waypointIndex = 0;
     private Vector3 dir;
+    private Vector3 oldPos;
 
     private Rigidbody rb;
 
@@ -19,8 +20,9 @@ public class Enemy : MonoBehaviour
     {
         target = Waypoints.points[0];
         rb = GetComponent<Rigidbody>();
-        Vector3 pos = Vector3(-3, 0.7, 6);
-        Instantiate(Player, pos);
+        oldPos = transform.position;
+        //Vector3 pos = Vector3(-3, 0.7, 6);
+        //Instantiate(Player, pos);
         
     }
 
@@ -56,4 +58,15 @@ public class Enemy : MonoBehaviour
         target = Waypoints.points[waypointIndex];
     }
 
+    private void OnTriggerEnter(Collider Player)
+    {
+        if (Player.tag == "death")
+        {
+            transform.position = oldPos;
+            waypointIndex = 0;
+            target = Waypoints.points[waypointIndex];
+            //Waypoints.points[waypointIndex] = Waypoints.points[waypointIndex] ;
+            Debug.Log("death");
+        }
+    }
 }
