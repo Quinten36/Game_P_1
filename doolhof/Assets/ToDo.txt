@@ -1,0 +1,17 @@
+#movement
+#zorgen dat camera mooi meegaat met player
+#player bouwen
+#player animatie
+#animatie in movement script
+#enemy maken
+#Pathfinder:
+	$navmesh instellen
+	$obstacels instellen
+	$einddoel instellen
+	$agent instellen
+#partical effect maken
+#partical effect in script verwerken
+#Geheime deuren maken
+#geheime deuren script
+#enemy's ook deuren laten gebruiken
+#alles mooi maken
