@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9E4B4A97-B98B-A0FA-46DC-BC8CF0BAB00D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ToDo.txt">
+    <Files>
+      <File FileName="Assets/script/goal.cs" Line="16" Column="35" />
+      <File FileName="Assets/ToDo.txt" Line="8" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="doolhof" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="script" expanded="True" />
+              <Node name="ToDo.txt" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d53eebc7-1567-482f-b5fe-6a400fc3165c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -3,12 +3,13 @@
 #player bouwen
 #player animatie
 #animatie in movement script
-#enemy maken
-#Pathfinder:
-	$navmesh instellen
-	$obstacels instellen
-	$einddoel instellen
-	$agent instellen
+#enemy maken || DONE
+#Pathfinder: || DONE
+
+	$navmesh instellen || DONE
+	$obstacels instellen || DONE
+	$einddoel instellen || DONE
+	$agent instellen || DONE
 #partical effect maken
 #partical effect in script verwerken
 #Geheime deuren maken
