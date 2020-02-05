@@ -10,6 +10,7 @@ public class bullet : MonoBehaviour
     //public GameObject barrelSmoke;
     //public Transform effectPoint;
     public float speed = 70f;
+    public float explosionRadius = 0f;
     //private Turret turret;
 
     public void Seek (Transform _target)
@@ -47,6 +48,7 @@ public class bullet : MonoBehaviour
         }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+        transform.LookAt(target);
 
 
     }
@@ -57,9 +59,40 @@ public class bullet : MonoBehaviour
         GameObject effetctIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         //GameObject smokeIns = (GameObject)Instantiate(barrelSmoke, effectPoint.position, effectPoint.rotation);
         //Destroy(smokeIns, 1f);
-        Destroy(target.gameObject);
-        Destroy(effetctIns, 2.3f);
+        Destroy(effetctIns, 5f);
+
+        if (explosionRadius > 0f)
+        {
+            Explode();
+        } else
+        {
+            Damage(target);
+        }
+
         Destroy(gameObject);
 
+    }
+
+    void Explode ()
+    {
+        Collider[] hitObjects = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach (Collider hitObject in hitObjects)
+        {
+            if (hitObject.tag == "Enemy")
+            {
+                Damage(hitObject.transform);
+            }
+        }
+    }
+
+    void Damage (Transform enemy)
+    {
+        Destroy(enemy.gameObject);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }
