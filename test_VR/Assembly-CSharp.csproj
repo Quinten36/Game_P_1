@@ -67,6 +67,8 @@
     <Compile Include="Assets\script\bullet.cs" />
     <Compile Include="Assets\script\CameraController.cs" />
     <Compile Include="Assets\script\Enemy.cs" />
+    <Compile Include="Assets\script\GameManager.cs" />
+    <Compile Include="Assets\script\LivesUI.cs" />
     <Compile Include="Assets\script\MoneyUI.cs" />
     <Compile Include="Assets\script\movement.cs" />
     <Compile Include="Assets\script\node.cs" />

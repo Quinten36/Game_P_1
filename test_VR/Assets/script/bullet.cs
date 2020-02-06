@@ -9,6 +9,9 @@ public class bullet : MonoBehaviour
     public GameObject impactEffect;
     //public GameObject barrelSmoke;
     //public Transform effectPoint;
+
+    public int damage = 50;
+
     public float speed = 70f;
     public float explosionRadius = 0f;
     //private Turret turret;
@@ -87,7 +90,12 @@ public class bullet : MonoBehaviour
 
     void Damage (Transform enemy)
     {
-        Destroy(enemy.gameObject);
+       Enemy e = enemy.GetComponent<Enemy>();
+
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
     }
 
     private void OnDrawGizmosSelected()
