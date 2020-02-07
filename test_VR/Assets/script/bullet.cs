@@ -37,7 +37,7 @@ public class bullet : MonoBehaviour
             //dir2.y -= Time.deltaTime * 10;
             //Quaternion down = Quaternion.LookRotation(dir2,dir2);
             //transform.rotation = down;
-            Debug.Log("werkt");
+           // Debug.Log("werkt");
             Destroy(gameObject);
             return;
         }
@@ -58,7 +58,7 @@ public class bullet : MonoBehaviour
 
     void HitTarget ()
     {
-        Debug.Log("SDF");
+      //  Debug.Log("SDF");
         GameObject effetctIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         //GameObject smokeIns = (GameObject)Instantiate(barrelSmoke, effectPoint.position, effectPoint.rotation);
         //Destroy(smokeIns, 1f);

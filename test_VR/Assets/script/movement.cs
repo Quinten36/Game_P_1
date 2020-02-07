@@ -19,6 +19,13 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.GameIsOver)
+        {
+            Debug.Log(GameManager.GameIsOver);
+            this.enabled = false;
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
             doMovement = !doMovement;
         if (!doMovement)

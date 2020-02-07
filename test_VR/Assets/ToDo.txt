@@ -1,3 +1,9 @@
 animatie dat er een x bedrag af gaat
 meer tijd in de UI stoppen
 damage goed zetten van de verschillende kogels
+zorgen voor een wave counter. Voor scores
+editor script. Dat ik aan de hand van een keuze tussen normale bullets of laser de velden kan laten tonen of juist niet (Unity costum edit : zoeken google)
+zorgen dat enemy volledig geslowt kan worden. even stilsta en daarna weer opnieuw kan worden geslowt.
+game over background fixen in photoshop
+shadows fixen van game over screen
+buttons veranderen van gameover. misschien ook beteren iamge ervoor?

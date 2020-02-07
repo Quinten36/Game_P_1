@@ -39,9 +39,17 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.GameIsOver)
+        {
+            Debug.Log(GameManager.GameIsOver);
+            this.enabled = false;
+            return;
+        }
+
         movementZ = transform.position.z;
         movementX = transform.position.x;
-        // Dev t6ool
+
+        // Dev tool
         if (Input.GetKeyDown(KeyCode.Escape))
             doMovement = !doMovement;
         if (!doMovement)
