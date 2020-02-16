@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f964e84593b85a4caacb5cb96504c5c, type: 2}
+  - {fileID: 2100000, guid: 36162fd1842bca949ad06d305c71d15b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,5 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 3191978219654882900, guid: 19b5fffd576844d408b18e25118e48b7,
     type: 3}
+  damage: 50
   speed: 30
   explosionRadius: 6

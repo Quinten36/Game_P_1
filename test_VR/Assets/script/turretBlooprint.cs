@@ -9,15 +9,9 @@ public class turretBlooprint
     public GameObject prefab;
     public int cost;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject upgradedPrefab;
+    public int upgradeCost;
+    public int sellAmount;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

@@ -7,3 +7,12 @@ zorgen dat enemy volledig geslowt kan worden. even stilsta en daarna weer opnieu
 game over background fixen in photoshop
 shadows fixen van game over screen
 buttons veranderen van gameover. misschien ook beteren iamge ervoor?
+todo arrow bij nodeUI verbeteren met hogere quality
+verbeter de look en feel van de nodeUI
+zorgen dat als je op node hover waar een turret staat dat dan je rode gloed weggaat 
+zorgen dat je met escape je turret deselect en je nodeUI deselect
+zorgen dat de nodeUI meedraait met de camera zodat het altijd te zien is
+verschillende effecten voor verschillende turrets en verschillende updardes
+upgrade cost flink aanpassen zodat het goed is
+misschien voor de upgrades nieuwe models of verbeterde models??
+kleuren fine tunen van de turrets en alle UI
