@@ -238,7 +238,7 @@ public class PlayerMovement : MonoBehaviour {
         float u = Mathf.DeltaAngle(lookAngle, moveAngle);
         float v = 90 - u;
 
-        float magnitue = rb.velocity.magnitude;
+        float magnitue   = rb.velocity.magnitude;
         float yMag = magnitue * Mathf.Cos(u * Mathf.Deg2Rad);
         float xMag = magnitue * Mathf.Cos(v * Mathf.Deg2Rad);
         
@@ -293,3 +293,4 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 }
+// dit sccript iss van Dani. ik gebruik hem omdat ik het een fijn script vindt en ik ben nu alles aan het leren en eigen comments aan het plaatsen in dit script

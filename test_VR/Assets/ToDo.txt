@@ -16,3 +16,4 @@ verschillende effecten voor verschillende turrets en verschillende updardes
 upgrade cost flink aanpassen zodat het goed is
 misschien voor de upgrades nieuwe models of verbeterde models??
 kleuren fine tunen van de turrets en alle UI
+!! als er al 1 keer max is geupgraded en je verkoopt en uopgraden weer dan is hij al geupgraded
