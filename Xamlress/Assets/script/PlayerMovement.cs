@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour {
     public float maxSpeed = 20;
     public bool grounded;
     public LayerMask whatIsGround;
+
+    public bool doMovement = true;
     
     public float counterMovement = 0.175f;
     private float threshold = 0.01f;
@@ -74,7 +76,10 @@ public class PlayerMovement : MonoBehaviour {
 
     
     private void FixedUpdate() {
-        Movement();
+        if (doMovement)
+        {
+            Movement();
+        }
     }
 
     private void Update() {
