@@ -73,6 +73,7 @@
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <None Include="Assets\ToDo.txt" />
+    <None Include="Assets\storyline.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Github Documenten/Game_P_1/Xamlress/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
