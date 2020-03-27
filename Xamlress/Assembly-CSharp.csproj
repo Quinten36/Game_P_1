@@ -64,9 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\script\agent.cs" />
+    <Compile Include="Assets\script\items\BackpackPickup.cs" />
     <Compile Include="Assets\script\MoveCamera.cs" />
     <Compile Include="Assets\script\next_level.cs" />
+    <Compile Include="Assets\script\PlayerInteract.cs" />
     <Compile Include="Assets\script\PlayerMovement.cs" />
+    <Compile Include="Assets\script\testRay.cs" />
     <Compile Include="Assets\script\tutorialAudio.cs" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />

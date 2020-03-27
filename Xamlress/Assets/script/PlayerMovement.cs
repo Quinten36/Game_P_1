@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     [Header("Assingables")]
     //Assingables
     public Transform playerCam;
+    public Transform glasses;
     public Transform orientation;
 
     [Header("Other")]
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
     [Header("Movement")]
     //Movement
     public float moveSpeed = 4500;
+    public float maxSpeedDia = 10;
     public float maxSpeed = 20;
     public bool grounded;
     public LayerMask whatIsGround;
@@ -203,6 +205,7 @@ public class PlayerMovement : MonoBehaviour {
 
         //Perform the rotations
         playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
+        glasses.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
         orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
     }
 
@@ -226,7 +229,7 @@ public class PlayerMovement : MonoBehaviour {
         //Limit diagonal running. This will also cause a full stop if sliding fast and un-crouching, so not optimal.
         if (Mathf.Sqrt((Mathf.Pow(rb.velocity.x, 2) + Mathf.Pow(rb.velocity.z, 2))) > maxSpeed) {
             float fallspeed = rb.velocity.y;
-            Vector3 n = rb.velocity.normalized * maxSpeed;
+            Vector3 n = rb.velocity.normalized * (maxSpeed - (maxSpeed / 2));
             rb.velocity = new Vector3(n.x, fallspeed, n.z);
         }
     }
@@ -298,4 +301,4 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 }
-// dit sccript iss van Dani. ik gebruik hem omdat ik het een fijn script vindt en ik ben nu alles aan het leren en eigen comments aan het plaatsen in dit script
+// dit sccript is van Dani. ik gebruik hem omdat ik het een fijn script vindt en ik ben nu alles aan het leren en eigen comments aan het plaatsen in dit script
