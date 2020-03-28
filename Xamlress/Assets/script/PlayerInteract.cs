@@ -33,7 +33,7 @@ public class PlayerInteract : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     BackpackPickUp.pickupBackpack();
-                    Destroy(BackpackS);
+                    Destroy(Backpack);
                     Debug.Log("Backpack opgepakt");
                 }
             }
